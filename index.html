@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+
+<script src="portifolio.js" defer></script>
+
+
+</head>
+
+<body>
+   <section id="Pag1">
+    <div class="apresentacao">
+        <a class="sm" href="#sobre-livia">SOBRE MIM</a>
+    <a class="mt" href="#meus-trabalhos">MEUS TRABALHOS</a>
+    <a class="ct" href="#contato">CONTATO</a>
+    <a class="rs" href="#redes-sociais">REDES SOCIAIS</a>
+    <label class="switch">
+  <input id="theme-toggle" type="checkbox">
+  <span class="slider round"></span>
+
+  </div>
+</div>
+
+</label>
+
+
+</label>
+    </div>
+    
+    <div id="teste"> 
+        <div class="Blocobranco">
+            <div class="esquerda">
+                
+                    <div class="foto" >
+                        <img class="imagem-redonda" src="Image_20251105_200109_058.jpeg" alt="">
+                    </div>
+                
+            </div>
+            <div class="direita">
+                <p class="ola">OLÁ A TODOS, EU SOU </p>
+                <P class="nome"> LÍVIA <br>PEDRAS</P>
+                <p class="estudante">ESTUDANTE DE T.I</p>
+                <p class="smalltext">Me chamo Lívia, atualmnte estou cursando T.I  
+                   <br> pelo colégio cotemig, carrego comigo uma <br>
+                     paixão por computadores e tecnologia. </p>
+                     <div class="iconees">
+                        <div class="contato">
+                            
+                            
+                        </div>
+                        <div class="contato">
+                            <img class="icone2" src="telephone.png" alt="">
+                            <p>31-99853-8858</p>
+                        </div>
+
+                        <div class="contato">
+                            <img class="icone3"  src="mail.png" alt="">
+                            <p>@pedrasslivia@icloud.com</p>
+                        </div>
+
+                        <div class="contato">
+                            <img class="icone4"  src="apartment.png" alt="">
+                            <p>Brasil, Belo horizonte</p>
+                        </div>
+                        
+                     
+                     </div>
+                     
+            </div>
+            
+        </div>
+
+    </div>
+   </section>
+
+  <!-- Faixa roxa superior ou inferior -->
+<div id="faixa-roxa">
+    <div id="conteudo-carrossel">
+      QUEM SOU - LÍVIA PEDRAS &nbsp;&nbsp; QUEM SOU - LÍVIA PEDRAS &nbsp;&nbsp;
+      QUEM SOU - LÍVIA PEDRAS &nbsp;&nbsp; QUEM SOU - LÍVIA PEDRAS &nbsp;&nbsp;
+    </div>
+  </div>  
+   <section id="sobre-livia">
+    <h1>QUEM SOU - LÍVIA PEDRAS</h1>
+    <div class="container-sobre">
+      <div class="texto-sobre">
+        <p>
+          Sou Lívia Pedras, estudante de Tecnologia da Informação pelo Colégio Cotemig. Apaixonada pelo universo da tecnologia, busco constantemente ampliar meus conhecimentos e aplicar soluções criativas aos desafios que encontro. Comunicativa e com uma visão sempre positiva, acredito que a colaboração e a atitude são fundamentais para o crescimento pessoal e profissional. Estou dedicada a construir uma carreira sólida, onde possa unir minha paixão por tecnologia com minha habilidade de me conectar com pessoas.
+        </p>
+      </div>
+      <div class="imagem-sobre">
+        <img src="unnamed (1).jpg" alt="">
+
+      </div>
+    </div>
+    <div  class="fotominha"></div>
+
+
+  </section>
+  <!-- Logo após sua seção Pag1 -->
+  
+  <script>
+    // Seleciona o container e o conteúdo
+    const faixa = document.getElementById("faixa-roxa");
+    const conteudo = document.getElementById("conteudo-carrossel");
+  
+    // Duplica o texto para garantir o looping contínuo
+    conteudo.innerHTML += conteudo.innerHTML;
+  
+    let posicao = 0; // posição inicial do texto
+    const velocidade = 1; // pixels por frame (aumente para acelerar)
+  
+    function moverTexto() {
+      posicao -= velocidade;
+      if (Math.abs(posicao) >= conteudo.scrollWidth / 2) {
+        posicao = 0; // reinicia o movimento
+      }
+      conteudo.style.transform = `translateX(${posicao}px)`;
+      requestAnimationFrame(moverTexto);
+    }
+  
+    moverTexto(); // inicia a animação
+  </script>
+
+<div id="faixa-roxa2">
+  <div id="conteudo-carrossel2">
+    QUEM SOU - LÍVIA PEDRAS &nbsp;&nbsp; QUEM SOU - LÍVIA PEDRAS &nbsp;&nbsp;
+    QUEM SOU - LÍVIA PEDRAS &nbsp;&nbsp; QUEM SOU - LÍVIA PEDRAS &nbsp;&nbsp;
+  </div>
+</div>  
+
+<script>
+  // Seleciona o container e o conteúdo
+  const faixa2 = document.getElementById("faixa-roxa2");
+  const conteudo2 = document.getElementById("conteudo-carrossel2");
+
+  // Duplica o texto para garantir o looping contínuo
+  conteudo2.innerHTML += conteudo2.innerHTML;
+
+  let posicao2 = 0; // posição inicial do texto
+  const velocidade2 = 1; // pixels por frame (aumente para acelerar)
+
+  function moverTexto2() {
+    posicao2 -= velocidade2;
+    if (Math.abs(posicao2) >= conteudo2.scrollWidth / 2) {
+      posicao2 = 0; // reinicia o movimento
+    }
+    conteudo2.style.transform = `translateX(${posicao2}px)`;
+    requestAnimationFrame(moverTexto2);
+  }
+
+  moverTexto2(); // inicia a animação
+</script>
+<section id="meus-trabalhos">
+    <h1>MEUS TRABALHOS</h1>
+    <p class="subtitulo-trabalhos">TODOS OS PROJETOS NO GITHUB</p>
+    
+    <a href="https://github.com/pedraslivia" class="btn-github-principal" target="_blank">
+        <img src="download.png" alt="Ícone GitHub"> VER TODOS NO GITHUB
+    </a>
+
+    <div class="container-projetos">
+        
+        
+            
+           
+            
+        </div>
+
+        
+
+        <div class="card-projeto">
+            <img src="download.png" alt="Ícone Código" class="card-icon">
+            <h3>Projeto e-commerce</h3>
+            <p>E-commerce de utencílios em greal.</p>
+            <a href="#https://pedraslivia.github.io/Site-e-commerce/" class="btn-github-card" target="_blank">Ver no GitHub</a>
+        </div>
+
+        <div class="card-projeto">
+            <img src="download.png" alt="Ícone Código" class="card-icon">
+            <h3>Projeto Tulen</h3>
+            <p>Projeto criado pra o desenvolvimento em grid.</p>
+            <a href="#https://pedraslivia.github.io/SiteFrontend-Grid/" class="btn-github-card" target="_blank">Ver no GitHub</a>
+        </div>
+
+        <div class="card-projeto">
+            <img src="download.png" alt="Ícone Código" class="card-icon">
+            <h3>Projeto Belara</h3>
+            <p>Reprodução de um site de arquitetura</p>
+            <a href="#" class="btn-github-card" target="_blank">Ver no GitHub</a>
+        </div>
+
+        
+        
+    </div>
+</section>
+
+<section id="contato">
+    <h1>Entre em Contato</h1>
+    <p class="subtitulo-contato">Tem alguma pergunta ou quer conversar sobre um projeto? <br> Me mande uma mensagem!</p>
+
+    <form class="formulario-contato" action="mailto:pedrasslivia@icloud.com" method="post" enctype="text/plain">
+        <div class="campo-form">
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+        </div>
+        <div class="campo-form">
+            <label for="email">Seu E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+        </div>
+        <div class="campo-form">
+            <label for="mensagem">Sua Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem aqui..." required></textarea>
+        </div>
+        <button type="submit" class="btn-principal-form">Enviar Mensagem</button>
+    </form>
+</section>
+
+
+<section id="redes-sociais">
+    <h1>Conecte-se Comigo</h1>
+    <p class="subtitulo-redes">Me siga nas minhas redes para acompanhar mais de perto.</p>
+
+    <div class="container-links-sociais">
+        <a href="https://www.linkedin.com/in/livia-pedras-00bb72395/" class="link-social" id="linkedin" target="_blank">
+            LinkedIn
+        </a>
+        <a href="https://github.com/pedraslivia" class="link-social" id="github" target="_blank">
+            GitHub
+        </a>
+        <a href="https://www.instagram.com/pedraslivia/" class="link-social" id="instagram" target="_blank">
+            Instagram
+        </a>
+        </div>
+        <!-- Custom cursor element -->
+<div id="custom-cursor" aria-hidden="true"></div>
+
+</section>
+
+
+<footer>
+    <p>&copy; 2025 LÍVIA PEDRAS. Todos os direitos reservados.</p>
+    <p>Feito com ❤️ e muito código.</p>
+</footer>
+
+
+
+
+
+
+
+  <script src="darkmode.js" defer></script>
+
+  
+    
+</body>
+</html>
